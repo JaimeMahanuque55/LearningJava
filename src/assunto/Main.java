@@ -440,22 +440,22 @@ public class Main {
 
 // Method Overloading is writing the same method with diferent parameters
 
-package assunto;
-
-public class Main {
-    public static void main(String[] args) {
-        System.out.println(sum(2, 3));
-        System.out.println(sum(2, 3, 2));
-    }
-
-    public static int sum(int x, int y) {
-        return x + y;
-    }
-
-    public static int sum(int x, int y, int z) {
-        return x + y + z;
-    }
-}
+//package assunto;
+//
+//public class Main {
+//    public static void main(String[] args) {
+//        System.out.println(sum(2, 3));
+//        System.out.println(sum(2, 3, 2));
+//    }
+//
+//    public static int sum(int x, int y) {
+//        return x + y;
+//    }
+//
+//    public static int sum(int x, int y, int z) {
+//        return x + y + z;
+//    }
+//}
 
 // Note: Overloaded methods can have different return types
 // Note: Overloaded methods must have different parameters
