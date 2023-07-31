@@ -362,35 +362,75 @@ public class Main {
 //    }
 //}
 
+//package assunto;
+//
+//import java.util.Scanner;
+//
+//public class Main {
+//    public static void main(String[] args) {
+//        Scanner s = new Scanner(System.in);
+//
+//        int n;
+//
+//        while(true) {
+//            System.out.print("Enter a number between 1 and 10: ");
+//            n = s.nextInt();
+//
+//            if (n < 1 || n > 10)
+//                continue;
+//
+//            break;
+//        }
+//        System.out.println(n + " is between 1 and 10");
+//    }
+//}
+
+/////////////////////////// Methods in Java
+///////// Outline
+// Void method
+// Value-returning method
+// The return keyword
+// calling methods
+
+///// Void method
+// A method that does not return a value. The return type is void.
+
+///// Value-returning method
+// A method that returns a value. The return type is the type of the data that will be returned.
+
+//// The return keyword
+// A keyword that can be used to return a value from a method
+
+///////////////////////// Passing Arguments by value in Java
+//////// Outline
+// Parameters & Arguments
+// Passing Arguments by value
+
+/////////////////////// Passing Arguments by Reference in java
+///////////// Outline
+// Point Class in Java
+// Passing Arguments by Reference
+
 package assunto;
 
-import java.util.Scanner;
+import java.awt.*;
 
 public class Main {
     public static void main(String[] args) {
-        Scanner s = new Scanner(System.in);
+        Point p1 = new Point();
+        p1.x = 1;
+        p1.y = 2;
+        System.out.println("x= " + p1.x + ", y= " + p1.y);
 
-        int n;
+        change(p1);
+        System.out.println("x= " + p1.x + ", y= " + p1.y);
+    }
 
-        while(true) {
-            System.out.print("Enter a number between 1 and 10: ");
-            n = s.nextInt();
-
-            if (n < 1 || n > 10)
-                continue;
-
-            break;
-        }
-        System.out.println(n + " is between 1 and 10");
+    private static void change(Point p) {
+        p.x = 2;
+        p.y = 1;
     }
 }
-
-
-
-
-
-
-
 
 
 
