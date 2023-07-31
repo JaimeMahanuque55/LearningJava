@@ -411,27 +411,54 @@ public class Main {
 // Point Class in Java
 // Passing Arguments by Reference
 
-package assunto;
+//package assunto;
+//
+//import java.awt.*;
+//
+//public class Main {
+//    public static void main(String[] args) {
+//        Point p1 = new Point();
+//        p1.x = 1;
+//        p1.y = 2;
+//        System.out.println("x= " + p1.x + ", y= " + p1.y);
+//
+//        change(p1);
+//        System.out.println("x= " + p1.x + ", y= " + p1.y);
+//    }
+//
+//    private static void change(Point p) {
+//        p.x = 2;
+//        p.y = 1;
+//    }
+//}
 
-import java.awt.*;
+
+////////////////// Methods Overloading in java
+//// Outline
+// Method Overloading
+// Overloading some methods
+
+// Method Overloading is writing the same method with diferent parameters
+
+package assunto;
 
 public class Main {
     public static void main(String[] args) {
-        Point p1 = new Point();
-        p1.x = 1;
-        p1.y = 2;
-        System.out.println("x= " + p1.x + ", y= " + p1.y);
-
-        change(p1);
-        System.out.println("x= " + p1.x + ", y= " + p1.y);
+        System.out.println(sum(2, 3));
+        System.out.println(sum(2, 3, 2));
     }
 
-    private static void change(Point p) {
-        p.x = 2;
-        p.y = 1;
+    public static int sum(int x, int y) {
+        return x + y;
+    }
+
+    public static int sum(int x, int y, int z) {
+        return x + y + z;
     }
 }
 
+// Note: Overloaded methods can have different return types
+// Note: Overloaded methods must have different parameters
 
 
 
