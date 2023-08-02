@@ -558,12 +558,52 @@ public class Main {
 //    }
 //}
 
+/////////////////// The Arrays Class in Java (Part 1)
+///// Outline
+// The Arrays class
+// Sorting arrays
+// Searching arrays
 
+//////// Arrays class -> A class that contains some static methods that are used with arrays
+// - Sorting, searching, comparing, Filling and Returning a string representation of an array
 
+// Sorting arrays -> sort(array): sorts the whole array
+///////////////// -> sort(array, fromIndex, toIndex): sort from (fromIndex) to (toIndex - 1)
 
+// Searching Arrays:
+///// Using binarySearch()
+// - The array should be sorted in increasing order
+// - binarySearch(array, element) -> binarySearch(numbers, 4)
 
+///// Return values:
+// - Index of element inside the array if exists
+// -  -(insertionIndex + 1) if the element was not found
 
+//example:
+package assunto;
 
+import java.util.Arrays;
+
+public class Main {
+    public static void main(String[] args) {
+        int[] numbers = {5, 4, 3, 2, 1, 0, -1};
+        Arrays.sort(numbers);
+
+        System.out.println(Arrays.toString(numbers));
+        System.out.println( Arrays.binarySearch(numbers, 4));
+        System.out.println( Arrays.binarySearch(numbers, 3));
+        System.out.println( Arrays.binarySearch(numbers, -3));
+        System.out.println( Arrays.binarySearch(numbers, 6));
+
+        String[] strings = {"a", "b", "c"};
+        System.out.println( Arrays.binarySearch(strings, "a"));
+        System.out.println( Arrays.binarySearch(strings, "c"));
+        System.out.println( Arrays.binarySearch(strings, "A"));
+        System.out.println( Arrays.binarySearch(strings, "d"));
+    }
+
+    // If you try to use with array of Points you will get an exception
+}
 
 
 
