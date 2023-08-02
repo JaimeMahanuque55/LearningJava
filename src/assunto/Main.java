@@ -461,8 +461,49 @@ public class Main {
 // Note: Overloaded methods must have different parameters
 
 
+////////////////// Single-Dimensional Arrays in Java (Part 1)
+///// Outline
+// The null value
+// Arrays in java
+// Creating arrays and default values
+// Accessing arrays elements
+// Arrays initializers
+// Printing arrays
 
+// NULL -> The value of an object that references nothing
 
+///// Arrays -> A collection of variables of the same data type
+// An Arrays in java is an object;
+// An array variable references a group of data;
+// The size of an array is fixed.
+
+///// Default Values -> When an array is created, its elements are assigned the following default values:
+// 0 for the numeric primitive data types;
+// \u0000 for char types;
+// false for boolean types;
+// null for reference types.
+
+///// Accessing Array elements
+// Use brackets and indices
+// int[] numbers = new int[5]; {0, 0, 0, 0, 0}
+// Accessing the first element -> numbers[0] = 5; {5, 0, 0, 0, 0}
+// Accessing the third element -> numbers[2] = 10; {5, 0, 10, 0, 0}
+// Accessing the last element -> numbers[4] = 3; {5, 0, 10, 0, 3}
+
+// Printing arrays
+//package assunto;
+//
+//public class Main {
+//    public static void main(String[] args) {
+//        int[] numbers = {5, 3, 2, 0, 10};
+//
+//        System.out.println(numbers); // Prints the address
+//
+////        for (int number : numbers) System.out.print(number + " ");
+//        for (int i = 0; i < numbers.length; i++)
+//            System.out.print(numbers[i] + " ");
+//    }
+//}
 
 
 
