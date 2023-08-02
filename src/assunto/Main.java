@@ -580,34 +580,72 @@ public class Main {
 // -  -(insertionIndex + 1) if the element was not found
 
 //example:
-package assunto;
+//package assunto;
+//
+//import java.util.Arrays;
+//
+//public class Main {
+//    public static void main(String[] args) {
+//        int[] numbers = {5, 4, 3, 2, 1, 0, -1};
+//        Arrays.sort(numbers);
+//
+//        System.out.println(Arrays.toString(numbers));
+//        System.out.println( Arrays.binarySearch(numbers, 4));
+//        System.out.println( Arrays.binarySearch(numbers, 3));
+//        System.out.println( Arrays.binarySearch(numbers, -3));
+//        System.out.println( Arrays.binarySearch(numbers, 6));
+//
+//        String[] strings = {"a", "b", "c"};
+//        System.out.println( Arrays.binarySearch(strings, "a"));
+//        System.out.println( Arrays.binarySearch(strings, "c"));
+//        System.out.println( Arrays.binarySearch(strings, "A"));
+//        System.out.println( Arrays.binarySearch(strings, "d"));
+//    }
+//
+//    // If you try to use with array of Points you will get an exception
+//}
 
-import java.util.Arrays;
+//////////////////// The Arrays Class in Java (Part 2)
+///// Outline
+// Comparing Arrays
+// The equals method
 
-public class Main {
-    public static void main(String[] args) {
-        int[] numbers = {5, 4, 3, 2, 1, 0, -1};
-        Arrays.sort(numbers);
+// Comparing arrays -> Using equals
+//example
 
-        System.out.println(Arrays.toString(numbers));
-        System.out.println( Arrays.binarySearch(numbers, 4));
-        System.out.println( Arrays.binarySearch(numbers, 3));
-        System.out.println( Arrays.binarySearch(numbers, -3));
-        System.out.println( Arrays.binarySearch(numbers, 6));
-
-        String[] strings = {"a", "b", "c"};
-        System.out.println( Arrays.binarySearch(strings, "a"));
-        System.out.println( Arrays.binarySearch(strings, "c"));
-        System.out.println( Arrays.binarySearch(strings, "A"));
-        System.out.println( Arrays.binarySearch(strings, "d"));
-    }
-
-    // If you try to use with array of Points you will get an exception
-}
-
+//package assunto;
+//
+//import java.util.Arrays;
+//
+//public class Main {
+//    public static void main(String[] args) {
+//
+//        int[] numbers1 = {5, 4, 3, 2, 1, 0, -1};
+//        int[] numbers2 = {5, 4, 3, 2, 1, 0, -1};
+//        int[] numbers3 = {5, 4, 7, 2, 1, 0, -1};
+//
+//        System.out.println(numbers1 == numbers2); // False, because it's comparing the arrays address.
+//        System.out.println(Arrays.equals(numbers1, numbers2)); // True
+//        System.out.println(Arrays.equals(numbers1, numbers3)); // false
+//    }
+//}
 
 
+/// The equals method
 
+//package assunto;
+//
+//import java.util.Arrays;
+//
+//public class Main {
+//    public static void main(String[] args) {
+//        String str1 = new String("Hello");
+//        String str2 = new String("Hello");
+//
+//        System.out.println( str1 == str2); // false
+//        System.out.println( str1.equals(str2)); // true
+//    }
+//}
 
 
 
