@@ -506,6 +506,57 @@ public class Main {
 //}
 
 
+////////////////// Single-Dimensional Arrays in Java (Part 2)
+///// Outline
+// Anonymous arrays
+// Exceeding Array bounds
+// Printing char arrays
+// Passing arrays to methods
+// Returning arrays from methods
+
+// Anonymous arrays ->  An arrays without a variable referencing it.
+
+//new Scanner(System.in).nextDouble();
+//new int[] {1, 2, 3, 4};
+//printArray(new int[] {1, 2, 3, 4}):
+
+//Exceeding Array bounds -> The indices must be between 0 and length - 1
+
+// char[] chars = {'a', 'b', 'c', 'd'};
+// Index -1 out of bounds for length 4
+// System.out.println(chars[-1]);
+
+// Index 4 out of bounds for length 4
+// System.out.println(chars[4]);
+
+// System.out.println(chars); // abcd
+
+// ArrayIndexOutOfBoundsException -> Think on this message like an error.
+
+
+// Passing arrays to methods -> Arrays are passed by reference, because arrays are objects
+
+// example:
+//package assunto;
+//
+//public class Main {
+//    public static void main(String[] args) {
+//        int[] numbers = {0, 1};
+//        change(numbers);
+//        printArray(numbers);
+//
+//    }
+//
+//    public static void change(int[] numbers) {
+//        numbers[0] = 1; // {1, 1}
+//        numbers[1] = 0; // {1, 0}
+//    }
+//
+//    public static void printArray(int[] numbers) {
+//        for (int i = 0; i < numbers.length; i++)
+//            System.out.print(numbers[i] + " ");
+//    }
+//}
 
 
 
