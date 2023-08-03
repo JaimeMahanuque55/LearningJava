@@ -648,8 +648,46 @@ public class Main {
 //}
 
 
+//////////////////// The Arrays Class in Java (Part 3)
+///// Outline
+// Filling arrays
+// Printing arrays
 
+// Filling arrays -> Using fill()
 
+// fill(Array, value): fill whole array
+//int[] numbers1 = new int[5]; // {0, 0, 0, 0, 0, 0}
+//Arrays.fill(numbers1, 3); // {3, 3, 3, 3, 3, 3}
+// example
+//package assunto;
+//
+//import java.awt.*;
+//import java.util.Arrays;
+//
+//public class Main {
+//    public static void main(String[] args) {
+//        int[] numbers1 = new int[8];
+//        Arrays.fill(numbers1, 3);
+//        System.out.println(Arrays.toString(numbers1));
+//
+//        int[] numbers2 = new int[8];
+//        Arrays.fill(numbers2, 3, 7, 55);
+//        System.out.println(Arrays.toString(numbers2));
+//
+//        // filling objects
+//
+//        String[] strings = new String[3];
+//        Arrays.fill(strings, "Hello");
+//        System.out.println(Arrays.toString(strings));
+//
+//        // filling points
+//        Point[] points = new Point[3];
+//        Arrays.fill(points, 0, 2, new Point(1, 2));
+//        System.out.println(Arrays.toString(points));
+//    }
+//}
+
+// Printing Array -> We use toString() to print strings
 
 
 
