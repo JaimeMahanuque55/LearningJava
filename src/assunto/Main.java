@@ -689,7 +689,61 @@ public class Main {
 
 // Printing Array -> We use toString() to print strings
 
+//////////////////////////// Variable-Length Argument Lists in Java
+///// Outline
+// Passing a variable number of arguments to a method
 
+// A variable number of arguments can be passed to a method.
+
+//example
+//package assunto;
+//
+//public class Main {
+//    public static void main(String[] args) {
+//
+//    }
+//    public static int sum(int... numbers) {
+//        int sum = 0;
+//        for (int i = 0; i < numbers.length; i++)
+//            sum += numbers[i];
+//
+//        return sum;
+//    }
+//}
+
+// VARIABLE-LENGTH ARGUMENT LISTS
+// - Only one variable-length parameter may be specified in a method;
+// - It must be the last parameter;
+// - Any other parameters must proceed it;
+// - We can pass an array or a variable number of arguments to a variable-length parameter;
+// - When invoking a method with a variable number of arguments, Java creates an array and passes the arguments to it.
+
+
+//example:
+
+//package assunto;
+//
+//import static java.lang.Integer.sum;
+//
+//public class Main {
+//    public static void main(String[] args) {
+//        System.out.println( sum(1, 7, -2));
+//
+//        int[] numbers = {1, 7, -2};
+//        System.out.println( sum(numbers));
+//
+//        System.out.println( sum(new int[] {1, 9, -2}));
+//    }
+//
+//    public static int sum(int... numbers) {
+//        int sum = 0;
+//        for (int i = 0; i < numbers.length; i++)
+//            sum += numbers[i];
+//
+//        return sum;
+//    }
+//
+//}
 
 
 
