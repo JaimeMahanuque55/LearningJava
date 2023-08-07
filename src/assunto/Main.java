@@ -755,7 +755,73 @@ public class Main {
 // Initializing 2D Arrays -> int[][] integers = {{3, 5}, {10, 2}};
 
 
+///////////////// Two-Dimensional Arrays in Java (Part 2)
+///// Outline
+// Printing a 2D Array Row by Row
+// Printing a 2D Array Column by column
 
+// example
+
+
+package assunto;
+
+import java.util.Arrays;
+
+public class Main {
+    public static void main(String[] args) {
+        int[][] integers = { {3, 5, 7}, {10, 2, 9} };
+
+
+        // Printing using to String
+
+        System.out.println(Arrays.toString(integers));
+        // Printing using deepToSTring
+        System.out.println(Arrays.deepToString(integers));
+
+        // Printing Row by row
+
+        // Printing the first row
+        System.out.print( integers[0][0] + " ");
+        System.out.print( integers[0][1] + " ");
+        System.out.print( integers[0][2] + " ");
+
+        // Printing the second row
+        System.out.print( integers[1][0] + " ");
+        System.out.print( integers[1][1] + " ");
+        System.out.print( integers[1][2] + " ");
+
+        System.out.println();
+
+        for (int i = 0; i < 2; i++) {
+            for (int j = 0; j < 3; j++) {
+                System.out.print(integers[i][j] + " ");
+            }
+            System.out.println();
+        }
+
+        // Printing column by column
+
+        System.out.print(integers[0][0] + " ");
+        System.out.print(integers[1][0] + " ");
+        System.out.print(integers[0][1] + " ");
+        System.out.print(integers[1][1] + " ");
+        System.out.print(integers[0][2] + " ");
+        System.out.print(integers[1][2] + " ");
+
+        System.out.println();
+
+        for (int i = 0; i < 3; i++) {
+            for (int j = 0; j < 2; j++) {
+                System.out.print(integers[j][i] + " ");
+            }
+
+            System.out.println();
+        }
+
+
+    }
+
+}
 
 
 
