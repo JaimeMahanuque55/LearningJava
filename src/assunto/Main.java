@@ -745,6 +745,14 @@ public class Main {
 //
 //}
 
+///////////////// Two-Dimensional Arrays in Java (Part 1)
+///// Outline
+// Two-Dimensional Array
+// Creating Two-Dimensional Arrays
+// Accessing Ywo-Dimensional Arrays Elements
+// Initializing Two-Dimensional Arrays
+
+// Initializing 2D Arrays -> int[][] integers = {{3, 5}, {10, 2}};
 
 
 
