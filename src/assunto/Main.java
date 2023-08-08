@@ -830,39 +830,81 @@ public class Main {
 // Ragged Arrays
 
 
-package assunto;
-
-public class Main {
-    public static void main(String[] args) {
-        int[][] integers = getArray();
-        printArray(integers);
-    }
-
-    //Returning a 2D Array from a method
-    public static int[][] getArray() {
-        return new int[][] { {1, 2, 3, 4}, {4, 5, 6}, {7, 8, 9} };
-    }
-
-    // Passing a 2D Array to a method
+//package assunto;
+//
+//public class Main {
+//    public static void main(String[] args) {
+//        int[][] integers = getArray();
+//        printArray(integers);
+//    }
+//
+//    //Returning a 2D Array from a method
+//    public static int[][] getArray() {
+//        return new int[][] { {1, 2, 3, 4}, {4, 5, 6}, {7, 8, 9} };
+//    }
+//
+//    // Passing a 2D Array to a method
+////    public static void printArray(int[][] integers) {
+////        for (int i = 0; i < 3; i++) {
+////            for (int j = 0; j < 3; j++) {
+////                System.out.print(integers[i][j]);
+////            }
+////            System.out.println();
+////        }
+////    }
 //    public static void printArray(int[][] integers) {
-//        for (int i = 0; i < 3; i++) {
-//            for (int j = 0; j < 3; j++) {
+//        for (int i = 0; i < integers.length; i++) {
+//            for (int j = 0; j < integers[i].length; j++) {
 //                System.out.print(integers[i][j]);
 //            }
 //            System.out.println();
 //        }
 //    }
-    public static void printArray(int[][] integers) {
-        for (int i = 0; i < integers.length; i++) {
-            for (int j = 0; j < integers[i].length; j++) {
-                System.out.print(integers[i][j]);
-            }
-            System.out.println();
-        }
-    }
-}
+//}
 
 // Ragged Arrays -> A 2D array with rows of different length
+
+
+///////////////////// ArrayLists in Java (Part 1)
+///// Outline
+// Creating an ArrayList
+// Add, Access, Change, and remove an item
+// Size of an ArrayList
+
+// ArrayList -> A resizable array
+// ArrayList<Integer> integers; // null
+// integers = new ArrayList<>();
+// ArrayList<Integer> integers = new ArrayList<>();
+// ArrayList<String> fruits = new ArrayList<>();
+
+// Note: In an ArraList, we can store objects (String, integer, Boolean, Double, character,...), not a primitive type (int, boolean, double, char...).
+
+
+///// Add Items
+
+// - Using the add() method. -> fruits.add("Apple");
+// Add an element to specific index. -> fruits.add(0, "Apple");
+
+///// Access an Item
+
+// - Using the get() method. -> fruits.get(1);
+
+///// Change an Item
+
+// - Using the set() method. -> fruits.set(0, "Banana");
+
+
+////// Remove an Item
+//// - To remove an element, use the remove() method.
+// -> Removing by index: fruits.remove(1);
+
+// -> Removing by value: fruits.remove("Banana")
+
+//// - To remove all elements, use the clear() method. -> fruits.clear();
+
+
+///// Size
+// - Using the size() method. -> fruits.size();
 
 
 
