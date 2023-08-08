@@ -915,36 +915,85 @@ public class Main {
 
 // Loop through an ArrayList
 //example
-package assunto;
-
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Collections;
-import java.util.List;
-
-public class Main {
-    public static void main(String[] args) {
-        ArrayList<String> fruits = new ArrayList<>(Arrays.asList("Banana", "Apple", "Orange"));
-
-        fruits.remove("Apple");
-        fruits.add("Orion");
-        fruits.add(3, "Maca");
-        Collections.addAll(fruits, "James", "Mito", "Antr");
-
-        for (int i = 0; i < fruits.size(); i++){
+//package assunto;
+//
+//import java.util.ArrayList;
+//import java.util.Arrays;
+//import java.util.Collections;
+//import java.util.List;
+//
+//public class Main {
+//    public static void main(String[] args) {
+//        ArrayList<String> fruits = new ArrayList<>(Arrays.asList("Banana", "Apple", "Orange"));
+//
+//        fruits.remove("Apple");
+//        fruits.add("Orion");
+//        fruits.add(3, "Maca");
+//        Collections.addAll(fruits, "James", "Mito", "Antr");
+//
+//        for (int i = 0; i < fruits.size(); i++){
+////            System.out.print(fruits.get(i) + " ");
+//            Collections.sort(fruits);
 //            System.out.print(fruits.get(i) + " ");
-            Collections.sort(fruits);
-            System.out.print(fruits.get(i) + " ");
-        }
-
-    }
-}
+//        }
+//
+//    }
+//}
 
 // Sort an ArrayList
 // - Use the sort() method of the collections class for sorting lists alphabetically or numerically.
 
 
+////////////////////////// For Each Loop in Java
 
+///// Outline
+// For each loop
+// Iterating over arrays and arrayLists using a for each loop
+
+// For each -> Usually used to iterate over Arrays and ArrayLists
+// Syntax:
+// for ( Type Var_name : ArrayList/Array) { ... }
+
+// - in each iteration, the variable VAR_NAME will hold the value of an element inside the ArrayList/Array, starting from the first element.
+// - There is no index -> We don't use the index to access the element
+// - Safe (Boundaries) -> We don't exceed the array length
+
+// example:
+
+//package assunto;
+//
+//import java.util.ArrayList;
+//import java.util.Arrays;
+//
+//public class Main {
+//    public static void main(String[] args) {
+//        ArrayList<String> itemsArrayList = new ArrayList<>(Arrays.asList(
+//                "Item1", "Item2", "Item3"
+//        ));
+//
+//        String[] itemsArray = {"item1", "item2", "item3"};
+//
+//        for ( String item : itemsArrayList)
+//            System.out.print(item + " ");
+//
+//        for ( String item : itemsArray)
+//            System.out.print(item + " ");
+//    }
+//}
+
+// Challenge -> WAP that prints the array elements concatinated with its index
+
+package assunto;
+
+public class Main {
+    public static void main(String[] args) {
+        int[] arr = {5, 2, 2, 0};
+
+        int i = 0;
+        for (int item : arr)
+            System.out.println(item + " " + i++);
+    }
+}
 
 
 
