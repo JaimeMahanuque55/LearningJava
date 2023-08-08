@@ -907,6 +907,42 @@ public class Main {
 // - Using the size() method. -> fruits.size();
 
 
+///////////////////// ArrayLists in Java (Part 2)
+///// Outline
+// Loop through an ArrayList
+// Sort an ArrayList
+
+
+// Loop through an ArrayList
+//example
+package assunto;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.List;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> fruits = new ArrayList<>(Arrays.asList("Banana", "Apple", "Orange"));
+
+        fruits.remove("Apple");
+        fruits.add("Orion");
+        fruits.add(3, "Maca");
+        Collections.addAll(fruits, "James", "Mito", "Antr");
+
+        for (int i = 0; i < fruits.size(); i++){
+//            System.out.print(fruits.get(i) + " ");
+            Collections.sort(fruits);
+            System.out.print(fruits.get(i) + " ");
+        }
+
+    }
+}
+
+// Sort an ArrayList
+// - Use the sort() method of the collections class for sorting lists alphabetically or numerically.
+
 
 
 
