@@ -983,18 +983,55 @@ public class Main {
 
 // Challenge -> WAP that prints the array elements concatinated with its index
 
-package assunto;
+//package assunto;
+//
+//public class Main {
+//    public static void main(String[] args) {
+//        int[] arr = {5, 2, 2, 0};
+//
+//        int i = 0;
+//        for (int item : arr)
+//            System.out.println(item + " " + i++);
+//    }
+//}
 
-public class Main {
-    public static void main(String[] args) {
-        int[] arr = {5, 2, 2, 0};
 
-        int i = 0;
-        for (int item : arr)
-            System.out.println(item + " " + i++);
-    }
-}
+///////////////////// Introduction to Classes and Objects (Part 1)
+///// Outline
+// OOP & Objects
+// Object's state, behavior, and identity
 
+
+/////// OOP & Objects
+///// OOP -> Object-oriented programming
+// - Involves programming using objects.
+// - An object represents an entity/object in the real world.
+// - An object has a state, a behavior, and an identity.
+
+// examples:
+// - Student, circle, button, bank account
+// - To represent a real world Point in programming we create a Point Object.
+
+///// The State of an Object
+///// Represented by the data fields of the object with their current values.
+// - The state of an object is also known as its properties or attributes.
+// - A point object, for example, has a data field x and data field y that characterizes a point.
+// - A rectangle object, for example, has the data fields width and height, that characterizes a rectangle.
+
+///// The behavior of an object
+//// Defined by the methods of an object
+// - The behavior of an object is also known as its actions.
+// - To invoke/call a method on an object is to ask the object to perform an action -> str.charAt(2).
+
+// For example, we can define the following methods for a Circle object:
+// - getArea(): returns the area of the circle;
+// - getPerimeter(): returns the perimeter of the circle;
+// - getRadiues(radius): sets/changes the redius of the circle
+
+
+///// The Identity of an object
+
+// What makes an object unique
 
 
 
