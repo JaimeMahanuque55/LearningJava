@@ -1204,16 +1204,87 @@ public class Main {
 //}
 
 
+/////////////////////////// Constructors in Java
+///// Outline
+// Constructors
+// Default constructor
+// Overloading constructors
 
 
+// Constructors -> A method used to instantiate and initialize objects
+// - A constructor must have the same name as the class;
+// - Constructors do not have a return type;
+// - Constructors are invoked using the new operator;
+// - Constructors play the role of initializing objects;
+// - A default constructor is a zero-argument constructor with an empty body.
+
+// Circle
+
+// - Data Fields (attributes):
+//// -> center : Point
+//// -> radius : double
+
+// - Methods (actions):
+//// -> Circle( initialCenter : Point, initialRadius : double)
+//// -> getArea() : double
+//// -> getPerimeter() : double
+//// -> setRadius( newRadius : double ) : void
+//// -> setCenter( newCenter : Point ) : void
+
+//package assunto;
+//import java.awt.*;
+//
+//public class Main {
+//
+//
+//    // Instantiating Circle Objects
+//    public static void main(String[] args) {
+//        Circle c1 = new Circle(new Point(1, 2), 3);
+//
+//        System.out.println(c1.center);
+//        System.out.println(c1.radius);
+//    }
+//    static class Circle {
+//
+//        Point center;
+//        double radius;
+//
+//        Circle(Point initialCenter, double initialRadius) {
+//            center = initialCenter;
+//            radius = initialRadius;
+//        }
+//    }
+//}
+
+// Using the default Constructor
+
+// - When no constructors are created, a default constructor is created automatically.
+
+// - When a constructor is created, the default constructor is not created.
+///// -> if you want a zero argument constructor, create one.
 
 
+// Overloading Circle()
 
-
-
-
-
-
+//import java.awt.*;
+//
+//class Circle {
+//     Point center;
+//     double radius;
+//
+////     Circle() { } // It is a Circle with default values
+//
+////    Modifying the default values
+////    Circle() {
+////         center = new Point(0, 0);
+////         radius = 1;
+////    }
+//
+//    Circle(Point initialCenter, double initialRadius) {
+//         center = initialCenter;
+//         radius = initialRadius;
+//    }
+//}
 
 
 
