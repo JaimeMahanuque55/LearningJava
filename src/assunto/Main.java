@@ -1034,11 +1034,105 @@ public class Main {
 // What makes an object unique
 
 
+///////////////////// Introduction to Classes and Objects (Part 2)
+///// Outline
+// Classes & Objects
+// Constructors
+// Default constructors
+// Graphical User Interface (GUI) & OOP
+
+//// Classes & Objects
+//// A Class defines the data fields and actions of an Object
+// - To create an Object we need a template/blueprint that defines the data fields and methods that this Object will have
+// -> Class.
+// -> An object is an instance of a Class.
+
+// - Objects of the same type are created/instantiated from the same class
+
+// - A Java class uses variables to define the data fields and methods to define actions. There are special methods called Constructors.
+
+///// Constructors
+///// A method used to create Objects
+// - A constructor can do anything, it is simply a method, but it is designed to do initializing actions, such as initializing the data fields of an object.
+
+// example:
+//Point p1 = new Point(0, 1);
+//
+//public Point(int x, int y) {
+//    this.x = x;
+//    this.y = y;
+//}
+
+///// Default Constructors
+//// A constructor that takes no paramenters
+
+// - If we create a class without creating a constructor, Java automatically creates a default constructor that takes no parameters and we will be able to use it to create objects of this class.
+
+
+///// GUI -> Graphical User Interface
 
 
 
+///////////////////// Creating a Class in Java
+///// Outline
+// Defining a Class
+// Defining attributes
+// Defining methods
+
+// example: Circle
+
+// - Data Fields (attributes):
+//// -> center : Point
+//// -> radius : double
+
+// - Methods (actions):
+//// -> getArea() : double
+//// -> getPerimeter() : double
+//// -> setRadius( newRadius : double ) : void
+//// -> setCenter( newCenter : Point ) : void
+
+// - Defining the circle class
+
+//class Circle {
+//
+//}
+
+// - There is no main() method, this class will be used to create Circle objects, not to run some code.
+// - We will use this class in the main() method of our Main class
+
+// Defining The Attributes
+
+//class Circle {
+//    Point center;
+//    double radius;
+//}
+
+// - Declared directly inside the class
+// - Can be accessed anywhere inside the class, inside all methods
+// - Take default values (center is null & radius is 0.0)
+// - Each object we create will have a center and a radius
 
 
+// Defining the Methods
+
+//import java.awt.*;
+//
+//class Circle {
+//    Point center;
+//    double radius;
+//    double getPerimeter() {
+//        return 2 * Math.PI * radius;
+//    }
+//    double getArea() {
+//        return Math.PI * radius * radius;
+//    }
+//    void setRadius(double newRadius) {
+//        radius = newRadius;
+//    }
+//    void setCenter(Point newCenter) {
+//        center = newCenter;
+//    }
+//}
 
 
 
