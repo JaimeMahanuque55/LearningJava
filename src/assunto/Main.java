@@ -1135,9 +1135,73 @@ public class Main {
 //}
 
 
+///////////////////// Instantiating Objects in Java
+// Outline
+// Instantiating Objects
+// The new Keyword
+// Accessing attributes & methods
+// Changing the value of an attribute
+// Default values
+
+// Instantiating a circle object
+
+//public static void main(String[] args) {
+//
+//    Circle c1 = new Circle(); // Default Constructor
+//    System.out.println( c1.center ); // null
+//    System.out.println( c1.radius ); // 0.0
+//}
+
+//import java.awt.*;
+//
+//// Default Values
+//class DefaultValues {
+//
+//    Point point; // null
+//    String str; //null
+//    double d; // 0.0
+//    int i; // 0
+//    char c; // '\u0000'
+//    boolean b; // false
+//}
+
+// Changing the value of attributes
+
+//public static void main(String[] args) {
+//
+////    Circle c1 = new Circle();
+////    c1.center = new Point(0, 0);
+////    c1.radius = 3;
+////
+////    System.out.println( c1.center ); // java.awt.Point[x=0, y=0]
+////    System.out.println( c1.radius ); // 3.0
+//
+//      // Another way
+//
+//      Circle c1 = new Circle();
+//      c1.setCenter( new Point(1, 2) );
+//      c1.setRadius( 5 );
+//
+//        System.out.println( c1.center ); // java.awt.Point[x=1, y=2]
+////    System.out.println( c1.radius ); // 5.0
+//}
 
 
+// Getting the area and perimeter
 
+//import java.awt.*;
+//
+//public class Main {
+//    public static void main(String[] args) {
+//
+//        Circle c1 = new Circle();
+//        c1.setCenter( new Point(1, 2) );
+//        c1.setRadius( 5 );
+//
+//        System.out.println( "Area = " + c1.getArea());
+//        System.out.println( "Perimeter = " + c1.getPerimeter() );
+//    }
+//}
 
 
 
