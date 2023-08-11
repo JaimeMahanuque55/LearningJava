@@ -1288,17 +1288,118 @@ public class Main {
 
 
 /////////////////// Creating a Class in Java - Practice
+//package assunto;
+//
+//import java.awt.*;
+//
+//public class Main {
+//    public static void main(String[] args) {
+//        Circle c1 = new Circle(new Point(1, 2), 3);
+//
+//        System.out.println( c1.getArea() );
+//    }
+//}
+
+
+///////////////////// Static Variables and Static Methods in Java
+///// Outline
+// Static variables and methods
+// The static keyword
+// Example
+
+// How to share data between instances of the same class?
+
+// Static variables & Methods
+
+// Static variables and static methods belong to the class, they are shared between all objects.
+// - If an object modifies a static variable, all objects of the same class are affected.
+// - A static variable can be accessed without creating an instance of the class.(Because the static variable belongs to the class and does not belong to the object)
+// A static method can be called using the same way. (We can access using an object or the name of the class).
+// A static method can not access instance variables or methods.
+
+//// The static keyword
+
+//static int numberOfCircles;
+//
+//static int getNumberOfCircles() {
+//    return numberOfCircles;
+//}
+
+
 package assunto;
 
 import java.awt.*;
 
 public class Main {
     public static void main(String[] args) {
-        Circle c1 = new Circle(new Point(1, 2), 3);
+        System.out.println( Circle.getNumberOfCircles() );
 
-        System.out.println( c1.getArea() );
+        Circle c1 = new Circle(new Point(1, 2), 3);
+        System.out.println( Circle.getNumberOfCircles() );
+        c1.numberOfCircles = 10;
+        Circle c2 = new Circle(new Point(2, 3), 2);
+        System.out.println( Circle.getNumberOfCircles() );
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

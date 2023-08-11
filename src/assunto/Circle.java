@@ -7,9 +7,13 @@ public class Circle {
 
     Point center;
     double radius;
+    static int numberOfCircles;
 
-    Circle() {}
+    Circle() {
+        numberOfCircles++;
+    }
     Circle(Point center, double radius) {
+        numberOfCircles++;
         this.center = center;
         this.radius = radius;
     }
@@ -27,6 +31,10 @@ public class Circle {
 
     void  setRadius(double radius) {
         this.radius = radius;
+    }
+
+    static int getNumberOfCircles() {
+        return numberOfCircles;
     }
 
 
