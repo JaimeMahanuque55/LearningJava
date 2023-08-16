@@ -1358,18 +1358,61 @@ public class Main {
 
 // example
 
+//package assunto;
+//
+//public class Main {
+//    public static void main(String[] args) {
+//        Test test = new Test();
+//
+//        test.setX(10);
+//        System.out.println(test.getX());
+//    }
+//}
+
+///////////////////////// Data Field Encapsulation in Java
+///// Outline
+// Data field encapsulation
+// Accessing private data fields
+// Getters & Setters
+
+///// Data field encapsulation
+// Preventing direct modifications of data fields by declaring them as private using private visibility modifiers
+// - The data fields radius and numberOfObjects of the Circle class can be modified directly, which makes the class difficult to maintain and vulnerable to bugs.
+
+
+///// Accessing Private Data Fields
+// A private data field cannot be accessed by an object from outside the class that defines the private field.
+// - Getter(accessor): public propertyType getPropertyName()
+// - Setter(mutator): public void setPropertyName(...)
+
+
+// example
+//package assunto;
+//
+//import java.awt.*;
+//
+//public class Main {
+//    public static void main(String[] args) {
+//        Circle.numberOfCircles = 10; // error because it is private
+//
+//        Circle c = new Circle(new Point(1, 1), 2);
+//        c.radius = -4; // error because it is private
+//    }
+//}
+
 package assunto;
+
+import java.awt.*;
 
 public class Main {
     public static void main(String[] args) {
-        Test test = new Test();
+        Circle c = new Circle(new Point(1, 1), 2);
+        c.setRadius(-2);
 
-        test.setX(10);
-        System.out.println(test.getX());
+        System.out.println( c.getRadius() );
+        System.out.println( Circle.getNumberOfCircles() );
     }
 }
-
-
 
 
 
