@@ -1326,28 +1326,48 @@ public class Main {
 //}
 
 
-package assunto;
+//package assunto;
+//
+//import java.awt.*;
+//
+//public class Main {
+//    public static void main(String[] args) {
+//        System.out.println( Circle.getNumberOfCircles() );
+//
+//        Circle c1 = new Circle(new Point(1, 2), 3);
+//        System.out.println( Circle.getNumberOfCircles() );
+//        c1.numberOfCircles = 10;
+//        Circle c2 = new Circle(new Point(2, 3), 2);
+//        System.out.println( Circle.getNumberOfCircles() );
+//    }
+//}
 
-import java.awt.*;
+///////////////////////// Visibility Modifiers in Java
+///// Outline
+// Visibility modifiers (Access modifiers )
+// public & private visibility modifiers
+// Default visibility
+
+
+///// Visibility modifiers
+// Visibility modifiers can be used to specify the visibility of a class and it's members
+// - public: Can be used on classes and class members. Used for unrestricted access, i.e. can be used from any other class.
+// - private: Can be used on class members. Used for restricting the access to the defining class, i.e. can be used accessed within the class only.
+
+// - In no visibility modifier is used, then by default the classes, methods, and data fields are accessible by any class in the same package.
+
+// example
+
+package assunto;
 
 public class Main {
     public static void main(String[] args) {
-        System.out.println( Circle.getNumberOfCircles() );
+        Test test = new Test();
 
-        Circle c1 = new Circle(new Point(1, 2), 3);
-        System.out.println( Circle.getNumberOfCircles() );
-        c1.numberOfCircles = 10;
-        Circle c2 = new Circle(new Point(2, 3), 2);
-        System.out.println( Circle.getNumberOfCircles() );
+        test.setX(10);
+        System.out.println(test.getX());
     }
 }
-
-
-
-
-
-
-
 
 
 
