@@ -1400,17 +1400,29 @@ public class Main {
 //    }
 //}
 
+//package assunto;
+//
+//import java.awt.*;
+//
+//public class Main {
+//    public static void main(String[] args) {
+//        Circle c = new Circle(new Point(1, 1), 2);
+//        c.setRadius(-2);
+//
+//        System.out.println( c.getRadius() );
+//        System.out.println( Circle.getNumberOfCircles() );
+//    }
+//}
+
+//////////////////// Visibility Modifiers and Encapsulation - Practice
+
 package assunto;
 
-import java.awt.*;
+import assunto.p1.C1;
 
 public class Main {
     public static void main(String[] args) {
-        Circle c = new Circle(new Point(1, 1), 2);
-        c.setRadius(-2);
-
-        System.out.println( c.getRadius() );
-        System.out.println( Circle.getNumberOfCircles() );
+        new C1().setX(1);
     }
 }
 
