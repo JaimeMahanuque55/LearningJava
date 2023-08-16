@@ -1416,19 +1416,100 @@ public class Main {
 
 //////////////////// Visibility Modifiers and Encapsulation - Practice
 
-package assunto;
+//package assunto;
+//
+//import assunto.p1.C1;
+//
+//public class Main {
+//    public static void main(String[] args) {
+//        new C1().setX(1);
+//    }
+//}
 
-import assunto.p1.C1;
+/////////////////////// Immutable Classes and Objects in Java
+///// Outline
+// Immutable Objects
+// Immutable Classes
+// Examples
 
-public class Main {
-    public static void main(String[] args) {
-        new C1().setX(1);
-    }
-}
+///// Immutable Objects
+// An object whose contents cannot be changed
+// - Sometimes, we want to create an object whose contents cannot be changed once the object has been created. such an object is called an immutable object and its class is an immutable class.
 
+// example: The String class is an immutable class, and String objects are immutable.
 
+///// Immutable Classes
+// - All data fields must be private.
+// - There can't be any setter methods.
+// - No getter methods can return a data field that is mutable.
+/// -> If there is a getter method that returns an object, this object should be immutable.
+/// -> Applies to data fields of reference type (objects).
 
+//example 1:
+// This class is immutable be cause we can't change it's value
+//class C1 {
+//    private int x;
+//
+//    public C1(int x) {
+//        this.x = x;
+//    }
+//
+//    public int getX() {
+//        return this.x;
+//    }
+//}
 
+// example 2:
+// This class is muttable because we can change it's value
+//class C2 {
+//    private int x;
+//
+//    public C2(int x) {
+//        this.x = x;
+//    }
+//
+//    public void setX(int x) {
+//        this.x = x;
+//    }
+//}
+
+// example 3:
+// This class is immutable
+//class C1 {
+//    private int x;
+//    private C2 c2;
+//
+//    public C1(int x, C2 c2) {
+//        this.x = x;
+//        this.c2 = c2;
+//    }
+//
+//    public int getX() {
+//        return this.x;
+//    }
+//}
+
+// example 4:
+
+// This class is mutable
+
+//class C1 {
+//    private int x;
+//    private C2 c2;
+//
+//    public C1(int x, C2 c2) {
+//        this.x = x;
+//        this.c2 = c2;
+//    }
+//
+//    public C2 getC2() {
+//        return this.c2;
+//    }
+//
+//    public int getX() {
+//        return this.x;
+//    }
+//}
 
 
 
