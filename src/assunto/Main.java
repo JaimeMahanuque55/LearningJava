@@ -1512,16 +1512,145 @@ public class Main {
 //}
 
 
+////////////////////////// The this Keyword in Java
+///// Outline
+// The this keyword
+// Referencing instance members using this
+// Invoking an overloaded constructor using this
+// this and static variables
+
+
+///// THIS
+// The this keyword refers to the object itself
+
+// Can be used to:
+/// - Reference instance data fields
+/// - Reference instance methods
+/// - Invoke a constructor
+
+
+////// Referencing data fields
+
+// example
+//public class C1{
+//    private int x;
+//
+//    public void setX(int x) {
+//        x = x; // Wrong
+//    }
+//}
+
+//public class C1{
+//    private int x;
+//
+//    public void setX(int x) {
+//        this.x = x; // Right way
+//    }
+//}
+
+
+// Note: Don't do it, because you will be repeating the same code
+
+//public class C1{
+//    private int x;
+//
+//    public C1(int x) {
+//        if (x >= 0)
+//            this.x = x;
+//        else
+//            this.x = 0;
+//    }
+//
+//    public void setX(int x) {
+//        if (x >= 0)
+//            this.x = x;
+//        else
+//            this.x = 0;
+//    }
+//}
+
+// Do this instead
+
+//public class C1{
+//    private int x;
+//
+//    public C1(int x) {
+//        setX(x);
+//    }
+//
+//    public void setX(int x) {
+//        if (x >= 0)
+//            this.x = x;
+//        else
+//            this.x = 0;
+//    }
+//}
+
+
+///////// Referencing methods
+
+// The following two codes are the same code
+
+//public class C1{
+//    private int x;
+//
+//    public C1(int x) {
+//        setX(x);
+//    }
+//
+//    public void setX(int x) {
+//        this.x = x;
+//    }
+//}
+
+//public class C1{
+//    private int x;
+//
+//    public C1(int x) {
+//        this.setX(x);
+//    }
+//
+//    public void setX(int x) {
+//        this.x = x;
+//    }
+//}
+
+/////// Invoking Constructors
+
+import java.awt.*;
+
+//public class Circle{
+//
+//    private Point center;
+//    private double radius;
+//
+//    public Circle() {
+//        this(new Point(1, 2), 1);
+//    }
+//
+//    public Circle(Point center, double radius) {
+//        this.center = center;
+//        this.radius = radius;
+//    }
+//}
 
 
 
+///////////// This and static variables
 
-
-
-
-
-
-
+//public class Circle{
+//
+//    private  static int k;
+//    public static void setK(int k) {
+////        this.k = k; // error: Because we can't use this on static variables.
+//        Circle.k; // we use the name of the class
+//    }
+//
+//    public static int getK() {
+////        return this.k; // error: Because we can't use this on static variables.
+//        return Circle.k; // we use the name of the class
+//    }
+//}
 
 
 
