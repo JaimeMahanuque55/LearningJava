@@ -1,4 +1,4 @@
-//package assunto;
+package assunto;//package assunto;
 /*
 public class Main {
     public static void main(String[] args) {
@@ -1617,6 +1617,8 @@ public class Main {
 
 /////// Invoking Constructors
 
+import assunto.Outer;
+
 import java.awt.*;
 
 //public class Circle{
@@ -1653,6 +1655,66 @@ import java.awt.*;
 //}
 
 
+///////////////////////////// Inner Classes in Java
+///// Outline
+// Member Classes & Static Member Classes
+// Creating instances of inner classes
+// Inner Classes and Visibility Modifiers
+// Inner Classes and static variables
+
+
+
+////////// Inner classes
+// A classe inside another class
+// We will talk about two inner classes:
+/// - Member Class
+/// - Static Member Class
+
+// An inner class can:
+/// - Access private members of the containing class.
+/// - Have a private access modifier. -> if we want to restric a class to one class only
+
+
+////////////// Member Class
+
+//public class Outer {
+//    class Inner {
+//        private int x;
+////        private static int x; // error: members classes cannot contain static variables
+//        public Inner(int x) {
+//            this.x = x;
+//        }
+//        public int getX() {
+//            return x;
+//        }
+//
+//        public void setX(int x) {
+//            this.x = x;
+//        }
+//    }
+//}
+
+
+//// create an inner object
+//public class Main {
+//    public static void main(String[] args) {
+//        Outer outer = new Outer();
+//        outer.demo();
+//    }
+//}
+
+//public class Main {
+//    public static void main(String[] args) {
+//        Outer outer = new Outer();
+//        Outer.Inner inner = Outer.new Inner();
+//
+//        inner.innerX = 5;
+//        inner.showX();
+//    }
+//}
+
+
+///// Visibility
 
 
 
