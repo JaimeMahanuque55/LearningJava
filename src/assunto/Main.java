@@ -1714,11 +1714,18 @@ import java.awt.*;
 //}
 
 
-///// Visibility
 
 
+////////////////////// UML Class Diagram
+///// Outline
+// What is UML
+// UML Class Diagram
 
 
+///// What is UML
+// Unified Modeling Language
+// - Class Diagram: Class Representation using UML
+/// -> Name, attributes, methods
 
 
 
