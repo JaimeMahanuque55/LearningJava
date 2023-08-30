@@ -47,6 +47,15 @@ public class Account {
         ));
     }
 
+    public int countTransactions(char type) {
+        int count = 0;
+        for (Transaction transaction : transactions) {
+            if (transaction.getType() == type)
+                count++;
+        }
+        return count;
+    }
+
     public int getId() {
         return id;
     }
@@ -82,7 +91,7 @@ public class Account {
         this.client = client;
     }
     public String toString() {
-        return this.id + " " + this.balance + " " + this.annualInterestRate + " " + this.dateCreated;
+        return this.id + " " + this.balance + " " + this.annualInterestRate + " " + this.dateCreated + "\n" + transactions;
     }
 
 }

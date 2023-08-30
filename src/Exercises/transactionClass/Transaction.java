@@ -17,4 +17,18 @@ public class Transaction {
 
         this.date = new Date();
     }
+
+    public char getType() {
+        return type;
+    }
+
+    public String toString() {
+        return "Transaction{" +
+                "type=" + type +
+                ", amount=" + amount +
+                ", balance" + balance +
+                ", date=" + date +
+                ", description='" + description + '\'' +
+                '}';
+    }
 }

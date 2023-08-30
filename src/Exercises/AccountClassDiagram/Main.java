@@ -13,19 +13,19 @@ package Exercises.AccountClassDiagram;
 
 public class Main {
     public static void main(String[] args) {
-        Account testAccount = new Account(1122, 20000, 4.5);
-        if (testAccount.withdraw(50000)) {
-            System.out.println("Withdraw successful");
-        } else {
-            System.out.println("Withdraw not successful");
-        }
-
-        testAccount.deposit(3000);
-        System.out.println(testAccount.getId() + " " +
-                testAccount.getBalance() + " " +
-                testAccount.getAnnualInterestRate() + " " +
-                testAccount.getDateCreated()
-        );
+//        Account testAccount = new Account(1122, 20000, 4.5);
+//        if (testAccount.withdraw(50000)) {
+//            System.out.println("Withdraw successful");
+//        } else {
+//            System.out.println("Withdraw not successful");
+//        }
+//
+//        testAccount.deposit(3000);
+//        System.out.println(testAccount.getId() + " " +
+//                testAccount.getBalance() + " " +
+//                testAccount.getAnnualInterestRate() + " " +
+//                testAccount.getDateCreated()
+//        );
 
     }
 }
