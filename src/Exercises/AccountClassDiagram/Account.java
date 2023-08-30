@@ -1,5 +1,9 @@
 package Exercises.AccountClassDiagram;
 
+import Exercises.clientClass.Client;
+import Exercises.transactionClass.Transaction;
+
+import java.util.ArrayList;
 import java.util.Date;
 
 public class Account {
@@ -7,12 +11,16 @@ public class Account {
     private double balance;
     private double annualInterestRate;
     private Date dateCreated;
+    private Client client;
+    private ArrayList<Transaction> transactions;
 
-    public Account(int id, double balance, double annualInterestRate) {
+    public Account(int id, double balance, double annualInterestRate, Client client) {
         this.id = id;
         this.balance = balance;
         this.annualInterestRate = annualInterestRate;
+        this.client = client;
 
+        this.transactions = new ArrayList<>();
         dateCreated = new Date();
     }
 
@@ -20,6 +28,9 @@ public class Account {
         if (balance < amount) return false;
 
         balance -= amount;
+        this.transactions.add(new Transaction(
+                'W', amount, this.balance, "Withdrawn " + amount
+        ));
         return true;
 //        if (balance >= amount) {
 //            balance -= amount;
@@ -31,6 +42,9 @@ public class Account {
 
     public void deposit(double amount) {
         balance += amount;
+        this.transactions.add(new Transaction(
+                'D', amount, this.balance, "Deposited " + amount
+        ));
     }
 
     public int getId() {
@@ -61,6 +75,12 @@ public class Account {
         return dateCreated;
     }
 
+    public Client getClient() {
+        return client;
+    }
+    public void setClient(Client client) {
+        this.client = client;
+    }
     public String toString() {
         return this.id + " " + this.balance + " " + this.annualInterestRate + " " + this.dateCreated;
     }
